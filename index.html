@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Z28oU+g6t8sW2BAqZadKdXdwpbmZxM/2P5TsnbGlfXpWw9yOOsQ3ay4ccyf7o+/9pVl2iERD/iB6Rig40Bx3QQ==" crossorigin="anonymous" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="floors-container">
+      <div class="floor">
+        <form class="hidden" id="login-form">
+          <input
+            class="login-form-input"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+         
+        </form>
+        <h1 class="hidden" id="greeting"></h1>
+        <form id="todo-form">
+          <input
+            class="todo-form-input"
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+    </div>
+    <div class="clock-box">
+      <h2 id="clock">00:00:00</h2>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="greetings.js"></script>
+    <script src="clock.js"></script>
+    <script src="quotes.js"></script>
+    <script src="background.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>

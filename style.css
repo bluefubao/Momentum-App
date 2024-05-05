@@ -1,0 +1,137 @@
+.hidden {
+  display: none;
+}
+
+#greeting {
+  color: white;
+}
+
+#todo-form {
+  color: green;
+}
+
+body {
+  background-color: black;
+}
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 90%;
+}
+
+.floors-container {
+  display: block;
+  position: relative;
+  z-index: 0;
+  margin: 4rem auto 0;
+  padding: 5rem 4rem 0 4rem;
+  width: 100%;
+  max-width: 525px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.floor {
+  margin-right: 20px; /* Adjust spacing between floors */
+}
+
+#clock {
+  font-size: 7rem;
+  color: #fefae4;
+  animation: glow 2s infinite alternate;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form-input,
+.todo-form-input {
+  color: white;
+  font-size: 1.15rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  margin: 0.5rem;
+}
+
+.login-form-input:hover,
+.login-form-input:focus,
+.todo-form-input:hover,
+.todo-form-input:focus {
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+#weather {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+   /* 배경색은 흰색으로 반투명하게 설정 */
+  border-radius: 1.5rem; /* 모서리를 둥글게 만듭니다. */
+  padding: 10px; /* 내부 여백을 추가하여 내용이 편안하게 표시되도록 합니다. */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* 다른 내용 위에 나타나도록 z-index를 설정합니다. */
+}
+
+#weather span {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1.15rem;
+  font-weight: bolder;
+  color: #fefae4;
+   /* 글자색은 어두운 회색으로 설정합니다. */
+}
+
+#quote {
+  position: fixed;
+  bottom: 20px; /* 화면 하단에서의 거리를 조정합니다. */
+  top: 90%;
+  left: 50%; /* 가운데로 정렬하기 위해 왼쪽 위치를 50%로 설정합니다. */
+  transform: translateX(
+    -50%
+  ); /* 가운데 정렬을 위해 X축으로 -50%만큼 이동시킵니다. */
+  white-space: nowrap; /* 텍스트가 한 줄로만 표시되도록 설정합니다. */
+  overflow: hidden; /* 넘치는 부분은 숨깁니다. */
+  text-overflow: ellipsis; /* 텍스트가 넘칠 경우 ...으로 표시됩니다. */
+  max-width: 90%; /* 요소의 최대 너비를 설정합니다. */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none; /* 테두리를 제거합니다. */
+  padding: 5px 10px; /* 내부 여백을 설정합니다. */
+  border-radius: 5px; /* 버튼을 둥글게 만듭니다. */
+  cursor: pointer; /* 커서를 포인터로 설정하여 클릭 가능한 상태로 표시합니다. */
+}
+
+.delete-button:hover {
+  color: #ffffff;
+  transition: 0.15s all ease;
+}
+
+/* 투두리스트의 글자색과 크기를 변경합니다. */
+#todo-list {
+  position: absolute;
+  color: #fefae4;
+}
+
+#todo-list li {
+  font-size: 18px;
+  /* 투두리스트의 항목들의 글자 크기를 지정합니다. */
+}
